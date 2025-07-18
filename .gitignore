@@ -1,0 +1,11 @@
+/vendor
+/node_modules
+/public/hot
+/public/storage
+/bootstrap/cache/*.php
+/config/*.php
+.env
+.env.backup
+.phpunit.result.cache
+Dockerfile
+docker-compose.yml
