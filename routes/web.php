@@ -20,6 +20,19 @@ Route::get('/', function () {
     return Inertia::render('Home');
 })->name('home');
 
+Route::get('/login', function () {
+    return Inertia::render('Auth/Login');
+})->name('login');
+
+Route::get('/products', function () {
+    return Inertia::render('Products/Index');
+})->name('products.index');
+
+// Página para crear producto
+Route::get('/products/create', function () {
+    return Inertia::render('Products/Create');
+})->name('products.create');
+
 // Route::get('/', function () {
 //     return Inertia::render('Welcome', [
 //         'canLogin' => Route::has('login'),
